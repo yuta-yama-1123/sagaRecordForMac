@@ -1,17 +1,15 @@
-//
-//  sagaRecordForMacApp.swift
-//  sagaRecordForMac
-//
-//  Created by 山本祐太 on 2022/09/13.
-//
-
 import SwiftUI
 
 @main
 struct sagaRecordForMacApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  // ウィンドウタイトル
+  let windowTitle: String = "SaGa Record for MAC"
+  
+  var body: some Scene {
+    WindowGroup {
+      // 入口はログイン画面
+      TopView()
+        .navigationTitle(windowTitle)
     }
+  }
 }

@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		0303DED128D0BD5900298F41 /* sagaRecordForMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DED028D0BD5900298F41 /* sagaRecordForMacApp.swift */; };
-		0303DED328D0BD5900298F41 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DED228D0BD5900298F41 /* ContentView.swift */; };
+		0303DED328D0BD5900298F41 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DED228D0BD5900298F41 /* TopView.swift */; };
 		0303DED528D0BD5B00298F41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0303DED428D0BD5B00298F41 /* Assets.xcassets */; };
 		0303DED828D0BD5B00298F41 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0303DED728D0BD5B00298F41 /* Preview Assets.xcassets */; };
 		0303DEE328D0BD5B00298F41 /* sagaRecordForMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DEE228D0BD5B00298F41 /* sagaRecordForMacTests.swift */; };
 		0303DEED28D0BD5B00298F41 /* sagaRecordForMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DEEC28D0BD5B00298F41 /* sagaRecordForMacUITests.swift */; };
 		0303DEEF28D0BD5B00298F41 /* sagaRecordForMacUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DEEE28D0BD5B00298F41 /* sagaRecordForMacUITestsLaunchTests.swift */; };
+		0303DEFC28D0C0C800298F41 /* IndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DEFB28D0C0C800298F41 /* IndexView.swift */; };
+		0303DEFE28D0C9BB00298F41 /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DEFD28D0C9BB00298F41 /* SigninView.swift */; };
+		0303DF0028D10A6F00298F41 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0303DEFF28D10A6F00298F41 /* .gitignore */; };
+		0303DF0228D10C4D00298F41 /* StatusEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DF0128D10C4D00298F41 /* StatusEditView.swift */; };
+		0303DF0428D10CC500298F41 /* ListEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DF0328D10CC500298F41 /* ListEditView.swift */; };
+		0303DF0628D10EC600298F41 /* StyleSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DF0528D10EC600298F41 /* StyleSearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +42,7 @@
 /* Begin PBXFileReference section */
 		0303DECD28D0BD5900298F41 /* sagaRecordForMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sagaRecordForMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0303DED028D0BD5900298F41 /* sagaRecordForMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sagaRecordForMacApp.swift; sourceTree = "<group>"; };
-		0303DED228D0BD5900298F41 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0303DED228D0BD5900298F41 /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
 		0303DED428D0BD5B00298F41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0303DED728D0BD5B00298F41 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0303DED928D0BD5B00298F41 /* sagaRecordForMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sagaRecordForMac.entitlements; sourceTree = "<group>"; };
@@ -45,6 +51,12 @@
 		0303DEE828D0BD5B00298F41 /* sagaRecordForMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sagaRecordForMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0303DEEC28D0BD5B00298F41 /* sagaRecordForMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sagaRecordForMacUITests.swift; sourceTree = "<group>"; };
 		0303DEEE28D0BD5B00298F41 /* sagaRecordForMacUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sagaRecordForMacUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0303DEFB28D0C0C800298F41 /* IndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexView.swift; sourceTree = "<group>"; };
+		0303DEFD28D0C9BB00298F41 /* SigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
+		0303DEFF28D10A6F00298F41 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		0303DF0128D10C4D00298F41 /* StatusEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusEditView.swift; sourceTree = "<group>"; };
+		0303DF0328D10CC500298F41 /* ListEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEditView.swift; sourceTree = "<group>"; };
+		0303DF0528D10EC600298F41 /* StyleSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleSearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +87,7 @@
 		0303DEC428D0BD5900298F41 = {
 			isa = PBXGroup;
 			children = (
+				0303DEFF28D10A6F00298F41 /* .gitignore */,
 				0303DECF28D0BD5900298F41 /* sagaRecordForMac */,
 				0303DEE128D0BD5B00298F41 /* sagaRecordForMacTests */,
 				0303DEEB28D0BD5B00298F41 /* sagaRecordForMacUITests */,
@@ -96,7 +109,12 @@
 			isa = PBXGroup;
 			children = (
 				0303DED028D0BD5900298F41 /* sagaRecordForMacApp.swift */,
-				0303DED228D0BD5900298F41 /* ContentView.swift */,
+				0303DED228D0BD5900298F41 /* TopView.swift */,
+				0303DEFD28D0C9BB00298F41 /* SigninView.swift */,
+				0303DEFB28D0C0C800298F41 /* IndexView.swift */,
+				0303DF0128D10C4D00298F41 /* StatusEditView.swift */,
+				0303DF0328D10CC500298F41 /* ListEditView.swift */,
+				0303DF0528D10EC600298F41 /* StyleSearchView.swift */,
 				0303DED428D0BD5B00298F41 /* Assets.xcassets */,
 				0303DED928D0BD5B00298F41 /* sagaRecordForMac.entitlements */,
 				0303DED628D0BD5B00298F41 /* Preview Content */,
@@ -234,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0303DED828D0BD5B00298F41 /* Preview Assets.xcassets in Resources */,
+				0303DF0028D10A6F00298F41 /* .gitignore in Resources */,
 				0303DED528D0BD5B00298F41 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0303DED328D0BD5900298F41 /* ContentView.swift in Sources */,
+				0303DF0428D10CC500298F41 /* ListEditView.swift in Sources */,
+				0303DED328D0BD5900298F41 /* TopView.swift in Sources */,
 				0303DED128D0BD5900298F41 /* sagaRecordForMacApp.swift in Sources */,
+				0303DEFE28D0C9BB00298F41 /* SigninView.swift in Sources */,
+				0303DEFC28D0C0C800298F41 /* IndexView.swift in Sources */,
+				0303DF0628D10EC600298F41 /* StyleSearchView.swift in Sources */,
+				0303DF0228D10C4D00298F41 /* StatusEditView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +449,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -452,6 +477,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
