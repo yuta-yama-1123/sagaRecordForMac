@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0303DED128D0BD5900298F41 /* sagaRecordForMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DED028D0BD5900298F41 /* sagaRecordForMacApp.swift */; };
+		0303DED328D0BD5900298F41 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DED228D0BD5900298F41 /* ContentView.swift */; };
+		0303DED528D0BD5B00298F41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0303DED428D0BD5B00298F41 /* Assets.xcassets */; };
+		0303DED828D0BD5B00298F41 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0303DED728D0BD5B00298F41 /* Preview Assets.xcassets */; };
+		0303DEE328D0BD5B00298F41 /* sagaRecordForMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DEE228D0BD5B00298F41 /* sagaRecordForMacTests.swift */; };
+		0303DEED28D0BD5B00298F41 /* sagaRecordForMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DEEC28D0BD5B00298F41 /* sagaRecordForMacUITests.swift */; };
+		0303DEEF28D0BD5B00298F41 /* sagaRecordForMacUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DEEE28D0BD5B00298F41 /* sagaRecordForMacUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0303DEDF28D0BD5B00298F41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0303DEC528D0BD5900298F41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0303DECC28D0BD5900298F41;
+			remoteInfo = sagaRecordForMac;
+		};
+		0303DEE928D0BD5B00298F41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0303DEC528D0BD5900298F41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0303DECC28D0BD5900298F41;
+			remoteInfo = sagaRecordForMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0303DECD28D0BD5900298F41 /* sagaRecordForMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sagaRecordForMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0303DED028D0BD5900298F41 /* sagaRecordForMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sagaRecordForMacApp.swift; sourceTree = "<group>"; };
+		0303DED228D0BD5900298F41 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0303DED428D0BD5B00298F41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0303DED728D0BD5B00298F41 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0303DED928D0BD5B00298F41 /* sagaRecordForMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sagaRecordForMac.entitlements; sourceTree = "<group>"; };
+		0303DEDE28D0BD5B00298F41 /* sagaRecordForMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sagaRecordForMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0303DEE228D0BD5B00298F41 /* sagaRecordForMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sagaRecordForMacTests.swift; sourceTree = "<group>"; };
+		0303DEE828D0BD5B00298F41 /* sagaRecordForMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sagaRecordForMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0303DEEC28D0BD5B00298F41 /* sagaRecordForMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sagaRecordForMacUITests.swift; sourceTree = "<group>"; };
+		0303DEEE28D0BD5B00298F41 /* sagaRecordForMacUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sagaRecordForMacUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0303DECA28D0BD5900298F41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0303DEDB28D0BD5B00298F41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0303DEE528D0BD5B00298F41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0303DEC428D0BD5900298F41 = {
+			isa = PBXGroup;
+			children = (
+				0303DECF28D0BD5900298F41 /* sagaRecordForMac */,
+				0303DEE128D0BD5B00298F41 /* sagaRecordForMacTests */,
+				0303DEEB28D0BD5B00298F41 /* sagaRecordForMacUITests */,
+				0303DECE28D0BD5900298F41 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0303DECE28D0BD5900298F41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0303DECD28D0BD5900298F41 /* sagaRecordForMac.app */,
+				0303DEDE28D0BD5B00298F41 /* sagaRecordForMacTests.xctest */,
+				0303DEE828D0BD5B00298F41 /* sagaRecordForMacUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0303DECF28D0BD5900298F41 /* sagaRecordForMac */ = {
+			isa = PBXGroup;
+			children = (
+				0303DED028D0BD5900298F41 /* sagaRecordForMacApp.swift */,
+				0303DED228D0BD5900298F41 /* ContentView.swift */,
+				0303DED428D0BD5B00298F41 /* Assets.xcassets */,
+				0303DED928D0BD5B00298F41 /* sagaRecordForMac.entitlements */,
+				0303DED628D0BD5B00298F41 /* Preview Content */,
+			);
+			path = sagaRecordForMac;
+			sourceTree = "<group>";
+		};
+		0303DED628D0BD5B00298F41 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0303DED728D0BD5B00298F41 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0303DEE128D0BD5B00298F41 /* sagaRecordForMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				0303DEE228D0BD5B00298F41 /* sagaRecordForMacTests.swift */,
+			);
+			path = sagaRecordForMacTests;
+			sourceTree = "<group>";
+		};
+		0303DEEB28D0BD5B00298F41 /* sagaRecordForMacUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0303DEEC28D0BD5B00298F41 /* sagaRecordForMacUITests.swift */,
+				0303DEEE28D0BD5B00298F41 /* sagaRecordForMacUITestsLaunchTests.swift */,
+			);
+			path = sagaRecordForMacUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0303DECC28D0BD5900298F41 /* sagaRecordForMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0303DEF228D0BD5B00298F41 /* Build configuration list for PBXNativeTarget "sagaRecordForMac" */;
+			buildPhases = (
+				0303DEC928D0BD5900298F41 /* Sources */,
+				0303DECA28D0BD5900298F41 /* Frameworks */,
+				0303DECB28D0BD5900298F41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sagaRecordForMac;
+			productName = sagaRecordForMac;
+			productReference = 0303DECD28D0BD5900298F41 /* sagaRecordForMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0303DEDD28D0BD5B00298F41 /* sagaRecordForMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0303DEF528D0BD5B00298F41 /* Build configuration list for PBXNativeTarget "sagaRecordForMacTests" */;
+			buildPhases = (
+				0303DEDA28D0BD5B00298F41 /* Sources */,
+				0303DEDB28D0BD5B00298F41 /* Frameworks */,
+				0303DEDC28D0BD5B00298F41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0303DEE028D0BD5B00298F41 /* PBXTargetDependency */,
+			);
+			name = sagaRecordForMacTests;
+			productName = sagaRecordForMacTests;
+			productReference = 0303DEDE28D0BD5B00298F41 /* sagaRecordForMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0303DEE728D0BD5B00298F41 /* sagaRecordForMacUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0303DEF828D0BD5B00298F41 /* Build configuration list for PBXNativeTarget "sagaRecordForMacUITests" */;
+			buildPhases = (
+				0303DEE428D0BD5B00298F41 /* Sources */,
+				0303DEE528D0BD5B00298F41 /* Frameworks */,
+				0303DEE628D0BD5B00298F41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0303DEEA28D0BD5B00298F41 /* PBXTargetDependency */,
+			);
+			name = sagaRecordForMacUITests;
+			productName = sagaRecordForMacUITests;
+			productReference = 0303DEE828D0BD5B00298F41 /* sagaRecordForMacUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0303DEC528D0BD5900298F41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					0303DECC28D0BD5900298F41 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					0303DEDD28D0BD5B00298F41 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 0303DECC28D0BD5900298F41;
+					};
+					0303DEE728D0BD5B00298F41 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 0303DECC28D0BD5900298F41;
+					};
+				};
+			};
+			buildConfigurationList = 0303DEC828D0BD5900298F41 /* Build configuration list for PBXProject "sagaRecordForMac" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0303DEC428D0BD5900298F41;
+			productRefGroup = 0303DECE28D0BD5900298F41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0303DECC28D0BD5900298F41 /* sagaRecordForMac */,
+				0303DEDD28D0BD5B00298F41 /* sagaRecordForMacTests */,
+				0303DEE728D0BD5B00298F41 /* sagaRecordForMacUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0303DECB28D0BD5900298F41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0303DED828D0BD5B00298F41 /* Preview Assets.xcassets in Resources */,
+				0303DED528D0BD5B00298F41 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0303DEDC28D0BD5B00298F41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0303DEE628D0BD5B00298F41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0303DEC928D0BD5900298F41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0303DED328D0BD5900298F41 /* ContentView.swift in Sources */,
+				0303DED128D0BD5900298F41 /* sagaRecordForMacApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0303DEDA28D0BD5B00298F41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0303DEE328D0BD5B00298F41 /* sagaRecordForMacTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0303DEE428D0BD5B00298F41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0303DEED28D0BD5B00298F41 /* sagaRecordForMacUITests.swift in Sources */,
+				0303DEEF28D0BD5B00298F41 /* sagaRecordForMacUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0303DEE028D0BD5B00298F41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0303DECC28D0BD5900298F41 /* sagaRecordForMac */;
+			targetProxy = 0303DEDF28D0BD5B00298F41 /* PBXContainerItemProxy */;
+		};
+		0303DEEA28D0BD5B00298F41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0303DECC28D0BD5900298F41 /* sagaRecordForMac */;
+			targetProxy = 0303DEE928D0BD5B00298F41 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0303DEF028D0BD5B00298F41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0303DEF128D0BD5B00298F41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		0303DEF328D0BD5B00298F41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = sagaRecordForMac/sagaRecordForMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"sagaRecordForMac/Preview Content\"";
+				DEVELOPMENT_TEAM = D92QVWG5E4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yutaYamamoto1123.sagaRecordForMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0303DEF428D0BD5B00298F41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = sagaRecordForMac/sagaRecordForMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"sagaRecordForMac/Preview Content\"";
+				DEVELOPMENT_TEAM = D92QVWG5E4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yutaYamamoto1123.sagaRecordForMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		0303DEF628D0BD5B00298F41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D92QVWG5E4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yutaYamamoto1123.sagaRecordForMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sagaRecordForMac.app/Contents/MacOS/sagaRecordForMac";
+			};
+			name = Debug;
+		};
+		0303DEF728D0BD5B00298F41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D92QVWG5E4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yutaYamamoto1123.sagaRecordForMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sagaRecordForMac.app/Contents/MacOS/sagaRecordForMac";
+			};
+			name = Release;
+		};
+		0303DEF928D0BD5B00298F41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D92QVWG5E4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yutaYamamoto1123.sagaRecordForMacUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = sagaRecordForMac;
+			};
+			name = Debug;
+		};
+		0303DEFA28D0BD5B00298F41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D92QVWG5E4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yutaYamamoto1123.sagaRecordForMacUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = sagaRecordForMac;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0303DEC828D0BD5900298F41 /* Build configuration list for PBXProject "sagaRecordForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0303DEF028D0BD5B00298F41 /* Debug */,
+				0303DEF128D0BD5B00298F41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0303DEF228D0BD5B00298F41 /* Build configuration list for PBXNativeTarget "sagaRecordForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0303DEF328D0BD5B00298F41 /* Debug */,
+				0303DEF428D0BD5B00298F41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0303DEF528D0BD5B00298F41 /* Build configuration list for PBXNativeTarget "sagaRecordForMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0303DEF628D0BD5B00298F41 /* Debug */,
+				0303DEF728D0BD5B00298F41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0303DEF828D0BD5B00298F41 /* Build configuration list for PBXNativeTarget "sagaRecordForMacUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0303DEF928D0BD5B00298F41 /* Debug */,
+				0303DEFA28D0BD5B00298F41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0303DEC528D0BD5900298F41 /* Project object */;
+}
