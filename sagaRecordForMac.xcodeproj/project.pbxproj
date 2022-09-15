@@ -20,6 +20,7 @@
 		0303DF0228D10C4D00298F41 /* StatusEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DF0128D10C4D00298F41 /* StatusEditView.swift */; };
 		0303DF0428D10CC500298F41 /* ListEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DF0328D10CC500298F41 /* ListEditView.swift */; };
 		0303DF0628D10EC600298F41 /* StyleSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DF0528D10EC600298F41 /* StyleSearchView.swift */; };
+		0303DF0828D39B8300298F41 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DF0728D39B8300298F41 /* SignupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		0303DF0128D10C4D00298F41 /* StatusEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusEditView.swift; sourceTree = "<group>"; };
 		0303DF0328D10CC500298F41 /* ListEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEditView.swift; sourceTree = "<group>"; };
 		0303DF0528D10EC600298F41 /* StyleSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleSearchView.swift; sourceTree = "<group>"; };
+		0303DF0728D39B8300298F41 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				0303DED028D0BD5900298F41 /* sagaRecordForMacApp.swift */,
 				0303DED228D0BD5900298F41 /* TopView.swift */,
 				0303DEFD28D0C9BB00298F41 /* SigninView.swift */,
+				0303DF0728D39B8300298F41 /* SignupView.swift */,
 				0303DEFB28D0C0C800298F41 /* IndexView.swift */,
 				0303DF0128D10C4D00298F41 /* StatusEditView.swift */,
 				0303DF0328D10CC500298F41 /* ListEditView.swift */,
@@ -282,6 +285,7 @@
 				0303DED328D0BD5900298F41 /* TopView.swift in Sources */,
 				0303DED128D0BD5900298F41 /* sagaRecordForMacApp.swift in Sources */,
 				0303DEFE28D0C9BB00298F41 /* SigninView.swift in Sources */,
+				0303DF0828D39B8300298F41 /* SignupView.swift in Sources */,
 				0303DEFC28D0C0C800298F41 /* IndexView.swift in Sources */,
 				0303DF0628D10EC600298F41 /* StyleSearchView.swift in Sources */,
 				0303DF0228D10C4D00298F41 /* StatusEditView.swift in Sources */,
