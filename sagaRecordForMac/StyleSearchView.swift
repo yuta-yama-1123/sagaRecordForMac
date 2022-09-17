@@ -2,7 +2,7 @@ import SwiftUI
 
 struct StyleSearchView: View {
     var body: some View {
-        Text("Hello, World!")
+        Text("StyleSearchView")
     }
 }
 

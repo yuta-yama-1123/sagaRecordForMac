@@ -28,7 +28,7 @@ struct SignupView: View {
       .padding(EdgeInsets(top: 10, leading: 10, bottom: 40, trailing: 10))
       
       Button(action: {
-        signin()
+        signup()
       }) {
         Text("ログイン")
           .font(
@@ -39,8 +39,9 @@ struct SignupView: View {
     .frame(width: 450, height: 400)
   }
   
-  func signin() {
-    print("signin!!")
+  func signup() {
+    print("signup!!")
+    isGoingToSignup = false
   }
 }
 
