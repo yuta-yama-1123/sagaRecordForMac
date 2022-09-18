@@ -2,9 +2,45 @@ import SwiftUI
 
 struct StatusEditView: View {
   @State var styleName: String = "test"
+  
+  @State var status1: String = ""
+  struct Character {
+    var id: String
+    var name: String
+    var status1: Int
+  }
+  let characters: [Character] = [
+    Character(
+      id: "1",
+      name: "名前１",
+      status1: 100
+    ),
+    Character(
+      id: "2",
+      name: "名前２",
+      status1: 120
+    )
+  ]
   var body: some View {
     HSplitView {
       VStack {
+        List {
+          ForEach(characters, id: \.self.id) { entry in
+            HStack {
+              Text(entry.id)
+                .padding()
+                .lineLimit(2)
+              Text(entry.name)
+                .lineLimit(2)
+            }.onTapGesture {
+              editStatus(character: entry)
+            }
+          }
+          .onMove { indices, destination in
+              // TODO: update items array accordingly
+          }
+        }
+
         // キャラの一覧を並べて表示したい。
         Button("テスト") {
           styleName = "ロマサガRSの育成アプリを作り隊！"
@@ -18,6 +54,12 @@ struct StatusEditView: View {
           .padding()
         Link("Twitter本文埋め込み", destination: getNewTweetUrlWithTag())
           .padding()
+        Text("ステータス更新")
+        HStack {
+          Text("腕力：")
+              .fontWeight(.heavy)
+          Text(status1)
+        }
       }
       .frame(width: 750, height: 600)
     }
@@ -38,6 +80,11 @@ struct StatusEditView: View {
       }
     
     return URL(string: "https://twitter.com/")!
+  }
+  
+  func editStatus(character: Character) {
+    self.styleName = character.name
+    self.status1 = String(character.status1)
   }
 }
 
