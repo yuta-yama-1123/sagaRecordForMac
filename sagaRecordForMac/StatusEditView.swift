@@ -4,6 +4,7 @@ struct StatusEditView: View {
   @State var styleName: String = "test"
   
   @State var status1: String = ""
+  @State var status2: Int = 0
   struct Character {
     var id: String
     var name: String
@@ -55,10 +56,15 @@ struct StatusEditView: View {
         Link("Twitter本文埋め込み", destination: getNewTweetUrlWithTag())
           .padding()
         Text("ステータス更新")
-        HStack {
-          Text("腕力：")
-              .fontWeight(.heavy)
-          Text(status1)
+        Group {
+          StatusStepperView(title: "腕力", param: status2)
+          StatusStepperView(title: "体力", param: status2)
+          StatusStepperView(title: "器用さ", param: status2)
+          StatusStepperView(title: "素早さ", param: status2)
+          StatusStepperView(title: "知力", param: status2)
+          StatusStepperView(title: "精神", param: status2)
+          StatusStepperView(title: "愛", param: status2)
+          StatusStepperView(title: "魅力", param: status2)
         }
       }
       .frame(width: 750, height: 600)
