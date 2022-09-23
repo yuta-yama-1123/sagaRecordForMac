@@ -1,16 +1,20 @@
 import SwiftUI
 
 struct IndexView: View {
+  @State var viewControllModel = ViewControllModel()
+  
   @State var statusEdit: Bool = false
   @State var hover: Bool = false
+  @State var viewStatus: String = "0"
   var body: some View {
     ZStack {
       if (statusEdit) {
-        StatusEditView()
+        ViewControllView(statusEdit: $statusEdit)
       } else {
         VStack {
           HStack {
             Button(action: {
+              viewControllModel.editStatus()
               statusEdit = true
             }) {
               if (hover) {
@@ -88,7 +92,7 @@ struct IndexView: View {
                 .buttonStyle(PlainButtonStyle())
                 .offset(x: 0, y: -5)
             Button(action: {
-              statusEdit = true
+              viewControllModel.selectView4()
             }) {
               Text("その他の何か")
                 .font(
@@ -104,6 +108,10 @@ struct IndexView: View {
         }
       }
     }
+  }
+  
+  func testPrint() {
+    print("testPrint")
   }
 }
 

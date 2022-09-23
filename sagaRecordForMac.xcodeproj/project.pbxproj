@@ -23,6 +23,7 @@
 		0303DF0828D39B8300298F41 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DF0728D39B8300298F41 /* SignupView.swift */; };
 		0303DF0A28D5FBC800298F41 /* ViewControllModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DF0928D5FBC800298F41 /* ViewControllModel.swift */; };
 		0303DF0C28D79DF100298F41 /* StatusStepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DF0B28D79DF100298F41 /* StatusStepperView.swift */; };
+		0303DF0E28DE0C2200298F41 /* ViewControllView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DF0D28DE0C2200298F41 /* ViewControllView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		0303DF0728D39B8300298F41 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		0303DF0928D5FBC800298F41 /* ViewControllModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllModel.swift; sourceTree = "<group>"; };
 		0303DF0B28D79DF100298F41 /* StatusStepperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusStepperView.swift; sourceTree = "<group>"; };
+		0303DF0D28DE0C2200298F41 /* ViewControllView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				0303DED028D0BD5900298F41 /* sagaRecordForMacApp.swift */,
 				0303DED228D0BD5900298F41 /* TopView.swift */,
 				0303DF0928D5FBC800298F41 /* ViewControllModel.swift */,
+				0303DF0D28DE0C2200298F41 /* ViewControllView.swift */,
 				0303DEFD28D0C9BB00298F41 /* SigninView.swift */,
 				0303DF0728D39B8300298F41 /* SignupView.swift */,
 				0303DEFB28D0C0C800298F41 /* IndexView.swift */,
@@ -292,6 +295,7 @@
 				0303DED328D0BD5900298F41 /* TopView.swift in Sources */,
 				0303DED128D0BD5900298F41 /* sagaRecordForMacApp.swift in Sources */,
 				0303DEFE28D0C9BB00298F41 /* SigninView.swift in Sources */,
+				0303DF0E28DE0C2200298F41 /* ViewControllView.swift in Sources */,
 				0303DF0828D39B8300298F41 /* SignupView.swift in Sources */,
 				0303DF0A28D5FBC800298F41 /* ViewControllModel.swift in Sources */,
 				0303DEFC28D0C0C800298F41 /* IndexView.swift in Sources */,
