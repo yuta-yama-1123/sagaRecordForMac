@@ -1,6 +1,9 @@
 import SwiftUI
+import PromiseKit
 
 struct SigninView: View {
+  
+  var callApiModel = CallAPIModel()
   
   @Binding var isAuthenticated: Bool
   @Binding var isGoingToSignup: Bool
@@ -64,7 +67,17 @@ struct SigninView: View {
   }
   
   func signin() {
-    isAuthenticated = false
+    firstly {
+      // 認証API呼び出し
+      callApiModel.callTouchPost()
+    }.done { loggedIn in
+      if (loggedIn) {
+        isAuthenticated = false
+      }
+    }.catch { error in
+      print(error)
+      //result = "ログインに失敗しました"
+    }
   }
   
   func signup() {

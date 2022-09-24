@@ -24,6 +24,11 @@
 		0303DF0A28D5FBC800298F41 /* ViewControllModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DF0928D5FBC800298F41 /* ViewControllModel.swift */; };
 		0303DF0C28D79DF100298F41 /* StatusStepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DF0B28D79DF100298F41 /* StatusStepperView.swift */; };
 		0303DF0E28DE0C2200298F41 /* ViewControllView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DF0D28DE0C2200298F41 /* ViewControllView.swift */; };
+		0303DF1028DF6B5200298F41 /* CallApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DF0F28DF6B5200298F41 /* CallApiModel.swift */; };
+		0303DF1228DF6F4300298F41 /* ConstantValuesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DF1128DF6F4300298F41 /* ConstantValuesModel.swift */; };
+		18BE0531D2B2511902D8B08F /* Pods_sagaRecordForMacTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D68E6E543FA38735D775FB /* Pods_sagaRecordForMacTests.framework */; };
+		37FECFCE3633FF92B30BB10B /* Pods_sagaRecordForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682DFE2A9AB5A16BC697A58D /* Pods_sagaRecordForMac.framework */; };
+		4B1A61E568304D3CDC061B50 /* Pods_sagaRecordForMac_sagaRecordForMacUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E88F244D46D04579A9ED3572 /* Pods_sagaRecordForMac_sagaRecordForMacUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +70,18 @@
 		0303DF0928D5FBC800298F41 /* ViewControllModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllModel.swift; sourceTree = "<group>"; };
 		0303DF0B28D79DF100298F41 /* StatusStepperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusStepperView.swift; sourceTree = "<group>"; };
 		0303DF0D28DE0C2200298F41 /* ViewControllView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllView.swift; sourceTree = "<group>"; };
+		0303DF0F28DF6B5200298F41 /* CallApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallApiModel.swift; sourceTree = "<group>"; };
+		0303DF1128DF6F4300298F41 /* ConstantValuesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantValuesModel.swift; sourceTree = "<group>"; };
+		0303DF1328DF7E5200298F41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3E419EA266CDF2BFDDE0B5E1 /* Pods-sagaRecordForMacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sagaRecordForMacTests.release.xcconfig"; path = "Target Support Files/Pods-sagaRecordForMacTests/Pods-sagaRecordForMacTests.release.xcconfig"; sourceTree = "<group>"; };
+		4E2E43E10C6E07EC15786A37 /* Pods-sagaRecordForMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sagaRecordForMac.release.xcconfig"; path = "Target Support Files/Pods-sagaRecordForMac/Pods-sagaRecordForMac.release.xcconfig"; sourceTree = "<group>"; };
+		64D68E6E543FA38735D775FB /* Pods_sagaRecordForMacTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sagaRecordForMacTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		682DFE2A9AB5A16BC697A58D /* Pods_sagaRecordForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sagaRecordForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		805194226BCEAA5E31509826 /* Pods-sagaRecordForMacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sagaRecordForMacTests.debug.xcconfig"; path = "Target Support Files/Pods-sagaRecordForMacTests/Pods-sagaRecordForMacTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B7B12251DA9812D32469FBEB /* Pods-sagaRecordForMac-sagaRecordForMacUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sagaRecordForMac-sagaRecordForMacUITests.release.xcconfig"; path = "Target Support Files/Pods-sagaRecordForMac-sagaRecordForMacUITests/Pods-sagaRecordForMac-sagaRecordForMacUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D08E84D617A37414C75F91FE /* Pods-sagaRecordForMac-sagaRecordForMacUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sagaRecordForMac-sagaRecordForMacUITests.debug.xcconfig"; path = "Target Support Files/Pods-sagaRecordForMac-sagaRecordForMacUITests/Pods-sagaRecordForMac-sagaRecordForMacUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E88F244D46D04579A9ED3572 /* Pods_sagaRecordForMac_sagaRecordForMacUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sagaRecordForMac_sagaRecordForMacUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4AB23F181F0D34CE6955C3D /* Pods-sagaRecordForMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sagaRecordForMac.debug.xcconfig"; path = "Target Support Files/Pods-sagaRecordForMac/Pods-sagaRecordForMac.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37FECFCE3633FF92B30BB10B /* Pods_sagaRecordForMac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BE0531D2B2511902D8B08F /* Pods_sagaRecordForMacTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B1A61E568304D3CDC061B50 /* Pods_sagaRecordForMac_sagaRecordForMacUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +120,8 @@
 				0303DEE128D0BD5B00298F41 /* sagaRecordForMacTests */,
 				0303DEEB28D0BD5B00298F41 /* sagaRecordForMacUITests */,
 				0303DECE28D0BD5900298F41 /* Products */,
+				8584D4AB94E8FBC4D9FB65F2 /* Pods */,
+				FC5983019370EE6B8325B2F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,8 +138,11 @@
 		0303DECF28D0BD5900298F41 /* sagaRecordForMac */ = {
 			isa = PBXGroup;
 			children = (
+				0303DF1328DF7E5200298F41 /* Info.plist */,
 				0303DED028D0BD5900298F41 /* sagaRecordForMacApp.swift */,
 				0303DED228D0BD5900298F41 /* TopView.swift */,
+				0303DF0F28DF6B5200298F41 /* CallApiModel.swift */,
+				0303DF1128DF6F4300298F41 /* ConstantValuesModel.swift */,
 				0303DF0928D5FBC800298F41 /* ViewControllModel.swift */,
 				0303DF0D28DE0C2200298F41 /* ViewControllView.swift */,
 				0303DEFD28D0C9BB00298F41 /* SigninView.swift */,
@@ -159,6 +184,29 @@
 			path = sagaRecordForMacUITests;
 			sourceTree = "<group>";
 		};
+		8584D4AB94E8FBC4D9FB65F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4AB23F181F0D34CE6955C3D /* Pods-sagaRecordForMac.debug.xcconfig */,
+				4E2E43E10C6E07EC15786A37 /* Pods-sagaRecordForMac.release.xcconfig */,
+				D08E84D617A37414C75F91FE /* Pods-sagaRecordForMac-sagaRecordForMacUITests.debug.xcconfig */,
+				B7B12251DA9812D32469FBEB /* Pods-sagaRecordForMac-sagaRecordForMacUITests.release.xcconfig */,
+				805194226BCEAA5E31509826 /* Pods-sagaRecordForMacTests.debug.xcconfig */,
+				3E419EA266CDF2BFDDE0B5E1 /* Pods-sagaRecordForMacTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FC5983019370EE6B8325B2F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				682DFE2A9AB5A16BC697A58D /* Pods_sagaRecordForMac.framework */,
+				E88F244D46D04579A9ED3572 /* Pods_sagaRecordForMac_sagaRecordForMacUITests.framework */,
+				64D68E6E543FA38735D775FB /* Pods_sagaRecordForMacTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0303DEF228D0BD5B00298F41 /* Build configuration list for PBXNativeTarget "sagaRecordForMac" */;
 			buildPhases = (
+				F06C3564C92274141656A733 /* [CP] Check Pods Manifest.lock */,
 				0303DEC928D0BD5900298F41 /* Sources */,
 				0303DECA28D0BD5900298F41 /* Frameworks */,
 				0303DECB28D0BD5900298F41 /* Resources */,
+				CCD3C6D136C65D5F17A6DCE3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,6 +233,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0303DEF528D0BD5B00298F41 /* Build configuration list for PBXNativeTarget "sagaRecordForMacTests" */;
 			buildPhases = (
+				D3E359F1462657ED8F27408D /* [CP] Check Pods Manifest.lock */,
 				0303DEDA28D0BD5B00298F41 /* Sources */,
 				0303DEDB28D0BD5B00298F41 /* Frameworks */,
 				0303DEDC28D0BD5B00298F41 /* Resources */,
@@ -201,9 +252,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0303DEF828D0BD5B00298F41 /* Build configuration list for PBXNativeTarget "sagaRecordForMacUITests" */;
 			buildPhases = (
+				B034C007AE65A5528C70689D /* [CP] Check Pods Manifest.lock */,
 				0303DEE428D0BD5B00298F41 /* Sources */,
 				0303DEE528D0BD5B00298F41 /* Frameworks */,
 				0303DEE628D0BD5B00298F41 /* Resources */,
+				92F8C7A91BA7C2FC769CC8B8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -285,6 +338,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		92F8C7A91BA7C2FC769CC8B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sagaRecordForMac-sagaRecordForMacUITests/Pods-sagaRecordForMac-sagaRecordForMacUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sagaRecordForMac-sagaRecordForMacUITests/Pods-sagaRecordForMac-sagaRecordForMacUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sagaRecordForMac-sagaRecordForMacUITests/Pods-sagaRecordForMac-sagaRecordForMacUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B034C007AE65A5528C70689D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sagaRecordForMac-sagaRecordForMacUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCD3C6D136C65D5F17A6DCE3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sagaRecordForMac/Pods-sagaRecordForMac-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sagaRecordForMac/Pods-sagaRecordForMac-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sagaRecordForMac/Pods-sagaRecordForMac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3E359F1462657ED8F27408D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sagaRecordForMacTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F06C3564C92274141656A733 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sagaRecordForMac-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0303DEC928D0BD5900298F41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -298,7 +454,9 @@
 				0303DF0E28DE0C2200298F41 /* ViewControllView.swift in Sources */,
 				0303DF0828D39B8300298F41 /* SignupView.swift in Sources */,
 				0303DF0A28D5FBC800298F41 /* ViewControllModel.swift in Sources */,
+				0303DF1028DF6B5200298F41 /* CallApiModel.swift in Sources */,
 				0303DEFC28D0C0C800298F41 /* IndexView.swift in Sources */,
+				0303DF1228DF6F4300298F41 /* ConstantValuesModel.swift in Sources */,
 				0303DF0628D10EC600298F41 /* StyleSearchView.swift in Sources */,
 				0303DF0228D10C4D00298F41 /* StatusEditView.swift in Sources */,
 			);
@@ -452,6 +610,7 @@
 		};
 		0303DEF328D0BD5B00298F41 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4AB23F181F0D34CE6955C3D /* Pods-sagaRecordForMac.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -464,6 +623,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = sagaRecordForMac/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -480,6 +640,7 @@
 		};
 		0303DEF428D0BD5B00298F41 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E2E43E10C6E07EC15786A37 /* Pods-sagaRecordForMac.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -492,6 +653,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = sagaRecordForMac/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -508,6 +670,7 @@
 		};
 		0303DEF628D0BD5B00298F41 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 805194226BCEAA5E31509826 /* Pods-sagaRecordForMacTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -527,6 +690,7 @@
 		};
 		0303DEF728D0BD5B00298F41 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E419EA266CDF2BFDDE0B5E1 /* Pods-sagaRecordForMacTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -546,6 +710,7 @@
 		};
 		0303DEF928D0BD5B00298F41 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D08E84D617A37414C75F91FE /* Pods-sagaRecordForMac-sagaRecordForMacUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -563,6 +728,7 @@
 		};
 		0303DEFA28D0BD5B00298F41 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7B12251DA9812D32469FBEB /* Pods-sagaRecordForMac-sagaRecordForMacUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
