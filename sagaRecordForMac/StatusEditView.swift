@@ -52,6 +52,7 @@ struct StatusEditView: View {
       VStack {
         // タブブラウザ的に編集中のスタイルを表示したい。
         Text(styleName)
+          .accessibility(identifier: "TargetStyleName")
           .padding()
         Link("Twitter本文埋め込み", destination: getNewTweetUrlWithTag())
           .padding()

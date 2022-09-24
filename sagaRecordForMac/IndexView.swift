@@ -49,6 +49,7 @@ struct IndexView: View {
                   }
               }
             }
+              .accessibility(identifier: "EditStatus")
               .buttonStyle(PlainButtonStyle())
               .frame(width: 505, height: 305)
               .padding(

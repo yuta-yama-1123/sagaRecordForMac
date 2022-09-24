@@ -17,13 +17,15 @@ struct SigninView: View {
         )
       
       VStack {
-        TextField("ログインID", text: $mailAddress)
+        TextField("サインインID", text: $mailAddress)
+          .accessibility(identifier: "SigninID")
           .frame(width: 300)
           .padding()
           .font(
             .system(size: 18, weight: .heavy, design: .rounded)
           )
         TextField("パスワード", text: $password)
+          .accessibility(identifier: "SigninPassword")
           .frame(width: 300)
           .font(
             .system(size: 16, weight: .heavy, design: .rounded)
@@ -34,11 +36,12 @@ struct SigninView: View {
       Button(action: {
         signin()
       }) {
-        Text("ログイン")
+        Text("サインイン")
           .font(
             .system(size: 16, weight: .heavy, design: .rounded)
           )
       }
+      .accessibility(identifier: "Signin")
       .buttonStyle(.borderless)
       .frame(width: 130, height: 45)
       .foregroundColor(Color.white)
