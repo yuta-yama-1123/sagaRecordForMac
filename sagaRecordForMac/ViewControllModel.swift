@@ -4,13 +4,17 @@ import SwiftUI
 class ViewControllModel {
   private var selectedView: String = "0"
   
+  enum distination: String {
+    case topMenu = "0"
+    case editStatus = "1"
+  }
   // ここに定義したメソッドを呼び出すことで各画面の表示/非表示をコントロールできるようにしたい
   func topMenu() {
-    self.selectedView = "0"
+    self.selectedView = distination.topMenu.rawValue
   }
   
   func editStatus() {
-    self.selectedView = "1"
+    self.selectedView = distination.editStatus.rawValue
   }
   
   func searchStyles() {
