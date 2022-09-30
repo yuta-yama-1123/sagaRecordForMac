@@ -9,12 +9,14 @@ struct IndexView: View {
   var body: some View {
     ZStack {
       if (statusEdit) {
-        ViewControllView(statusEdit: $statusEdit)
+        ViewControllView(viewStatus: $viewStatus)
       } else {
         VStack {
           HStack {
             Button(action: {
               viewControllModel.editStatus()
+              viewStatus = viewControllModel.getSelectedView()
+              print("viewStatus:" + viewStatus)
               statusEdit = true
             }) {
               if (hover) {

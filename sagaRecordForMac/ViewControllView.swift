@@ -10,11 +10,11 @@ import SwiftUI
 struct ViewControllView: View {
   @State var viewControllModel = ViewControllModel()
   
-  @Binding var statusEdit: Bool
+  @Binding var viewStatus: String
   
   var body: some View {
-    switch statusEdit {
-      case true:
+    switch viewStatus {
+      case ViewControllModel.distination.editStatus.rawValue:
         StatusEditView()
     default:
       IndexView()
@@ -23,8 +23,8 @@ struct ViewControllView: View {
 }
 
 struct ViewControllView_Previews: PreviewProvider {
-  @State static var statusEdit = true
+  @State static var viewStatus = "1"
   static var previews: some View {
-    ViewControllView(statusEdit: $statusEdit)
+    ViewControllView(viewStatus: $viewStatus)
   }
 }
