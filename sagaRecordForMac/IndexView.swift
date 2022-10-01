@@ -6,9 +6,10 @@ struct IndexView: View {
   @State var statusEdit: Bool = false
   @State var hover: Bool = false
   @State var viewStatus: String = "0"
+  
   var body: some View {
     ZStack {
-      if (statusEdit) {
+      if (viewStatus != "0") {
         ViewControllView(viewStatus: $viewStatus)
       } else {
         VStack {
@@ -16,39 +17,11 @@ struct IndexView: View {
             Button(action: {
               viewControllModel.editStatus()
               viewStatus = viewControllModel.getSelectedView()
-              print("viewStatus:" + viewStatus)
-              statusEdit = true
             }) {
               if (hover) {
-                Image("505x305_2")
-                  .resizable()
-                  .aspectRatio(contentMode: .fill)
-                  .scaledToFill()
-                  .frame(width: 505, height: 305)
-                  .blur(radius: 1.0)
-                  .overlay(alignment: .topTrailing) {
-                    Text("ステータス更新")
-                      .font(
-                        .system(size: 50, weight: .heavy, design: .rounded)
-                      )
-                      .foregroundColor(.black)
-                      .padding()
-                  }
+                CustomImage(fileName: "505x305_2", overlayText: "ステータス更新")
               } else {
-                Image("505x305_1")
-                  .resizable()
-                  .aspectRatio(contentMode: .fill)
-                  .scaledToFill()
-                  .frame(width: 505, height: 305)
-                  .blur(radius: 1.0)
-                  .overlay(alignment: .topTrailing) {
-                    Text("ステータス更新")
-                      .font(
-                        .system(size: 50, weight: .heavy, design: .rounded)
-                      )
-                      .foregroundColor(.black)
-                      .padding()
-                  }
+                CustomImage(fileName: "505x305_1", overlayText: "ステータス更新")
               }
             }
               .accessibility(identifier: "EditStatus")

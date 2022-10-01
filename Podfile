@@ -3,10 +3,9 @@
 
 target 'sagaRecordForMac' do
   # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
 
   # Pods for sagaRecordForMac
-  pod 'Alamofire', '~> 5.2'
+  pod 'Alamofire', '~> 5.3'
   pod 'PromiseKit', '~> 6.8'
 
   target 'sagaRecordForMacTests' do

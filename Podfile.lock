@@ -9,7 +9,7 @@ PODS:
     - PromiseKit/CorePromise
 
 DEPENDENCIES:
-  - Alamofire (~> 5.2)
+  - Alamofire (~> 5.3)
   - PromiseKit (~> 6.8)
 
 SPEC REPOS:
@@ -21,6 +21,6 @@ SPEC CHECKSUMS:
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
   PromiseKit: 49d70c53d5d20e346beaea4b276b5dd2ab446bb4
 
-PODFILE CHECKSUM: f1a794546361132bf17cd4b33340a3c02a75e2c9
+PODFILE CHECKSUM: c0cfdd53e4044f70318f3bee79e89d92c21e0e22
 
 COCOAPODS: 1.11.3

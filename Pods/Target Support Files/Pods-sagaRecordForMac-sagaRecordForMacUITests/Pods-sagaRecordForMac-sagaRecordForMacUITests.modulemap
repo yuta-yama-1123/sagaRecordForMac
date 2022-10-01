@@ -1,4 +1,4 @@
-framework module Pods_sagaRecordForMac_sagaRecordForMacUITests {
+module Pods_sagaRecordForMac_sagaRecordForMacUITests {
   umbrella header "Pods-sagaRecordForMac-sagaRecordForMacUITests-umbrella.h"
 
   export *

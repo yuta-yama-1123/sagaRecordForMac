@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "514684024CAEE89EDE463CA0F05022D8"
-               BuildableName = "Pods_sagaRecordForMac_sagaRecordForMacUITests.framework"
+               BuildableName = "libPods-sagaRecordForMac-sagaRecordForMacUITests.a"
                BlueprintName = "Pods-sagaRecordForMac-sagaRecordForMacUITests"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
