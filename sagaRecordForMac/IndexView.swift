@@ -4,7 +4,9 @@ struct IndexView: View {
   @State var viewControllModel = ViewControllModel()
   
   @State var statusEdit: Bool = false
-  @State var hover: Bool = false
+  @State var hover1: Bool = false
+  @State var hover2: Bool = false
+  @State var hover3: Bool = false
   @State var viewStatus: String = "0"
   
   var body: some View {
@@ -18,7 +20,7 @@ struct IndexView: View {
               viewControllModel.editStatus()
               viewStatus = viewControllModel.getSelectedView()
             }) {
-              if (hover) {
+              if (hover1) {
                 CustomImage(fileName: "505x305_2", overlayText: "ステータス更新")
               } else {
                 CustomImage(fileName: "505x305_1", overlayText: "ステータス更新")
@@ -30,14 +32,14 @@ struct IndexView: View {
               .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
               .offset(x: 0, y: 0)
               .onHover { hovering in
-                hover = hovering
+                hover1 = hovering
               }
             
             Button(action: {
               viewControllModel.editStyleList()
               viewStatus = viewControllModel.getSelectedView()
             }) {
-              if (hover) {
+              if (hover2) {
                 CustomImage(fileName: "505x305_2", overlayText: "所持スタイル登録")
               } else {
                 CustomImage(fileName: "505x305_1", overlayText: "所持スタイル登録")
@@ -49,23 +51,29 @@ struct IndexView: View {
               .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
               .offset(x: -5, y: 0)
               .onHover { hovering in
-                hover = hovering
+                hover2 = hovering
               }
           }
           HStack {
             Button(action: {
-              statusEdit = true
+              viewControllModel.searchStyles()
+              viewStatus = viewControllModel.getSelectedView()
             }) {
-              Text("スタイル一覧/検索")
-                .font(
-                  .system(size: 50, weight: .heavy, design: .rounded)
-                )
-                .frame(width: 505, height: 305)
-                .foregroundColor(Color.white)
-                .background(.blue)
+              if (hover3) {
+                CustomImage(fileName: "505x305_2", overlayText: "スタイル一覧/検索")
+              } else {
+                CustomImage(fileName: "505x305_1", overlayText: "スタイル一覧/検索")
               }
-                .buttonStyle(PlainButtonStyle())
-                .offset(x: 0, y: -5)
+            }
+              .accessibility(identifier: "SearchStyle")
+              .buttonStyle(PlainButtonStyle())
+              .frame(width: 505, height: 305)
+              .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+              .offset(x: 0, y: -5)
+              .onHover { hovering in
+                hover3 = hovering
+              }
+            
             Button(action: {
               viewControllModel.selectView4()
             }) {
