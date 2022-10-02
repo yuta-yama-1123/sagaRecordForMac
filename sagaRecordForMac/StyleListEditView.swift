@@ -1,13 +1,13 @@
 import SwiftUI
 
-struct ListEditView: View {
+struct StyleListEditView: View {
     var body: some View {
         Text("ListEditView")
     }
 }
 
-struct ListEditView_Previews: PreviewProvider {
+struct StyleListEditView_Previews: PreviewProvider {
     static var previews: some View {
-        ListEditView()
+        StyleListEditView()
     }
 }

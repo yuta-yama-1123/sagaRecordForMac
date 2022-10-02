@@ -18,7 +18,7 @@
 		0303DEFE28D0C9BB00298F41 /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DEFD28D0C9BB00298F41 /* SigninView.swift */; };
 		0303DF0028D10A6F00298F41 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0303DEFF28D10A6F00298F41 /* .gitignore */; };
 		0303DF0228D10C4D00298F41 /* StatusEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DF0128D10C4D00298F41 /* StatusEditView.swift */; };
-		0303DF0428D10CC500298F41 /* ListEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DF0328D10CC500298F41 /* ListEditView.swift */; };
+		0303DF0428D10CC500298F41 /* StyleListEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DF0328D10CC500298F41 /* StyleListEditView.swift */; };
 		0303DF0628D10EC600298F41 /* StyleSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DF0528D10EC600298F41 /* StyleSearchView.swift */; };
 		0303DF0828D39B8300298F41 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DF0728D39B8300298F41 /* SignupView.swift */; };
 		0303DF0A28D5FBC800298F41 /* ViewControllModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DF0928D5FBC800298F41 /* ViewControllModel.swift */; };
@@ -65,7 +65,7 @@
 		0303DEFD28D0C9BB00298F41 /* SigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
 		0303DEFF28D10A6F00298F41 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		0303DF0128D10C4D00298F41 /* StatusEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusEditView.swift; sourceTree = "<group>"; };
-		0303DF0328D10CC500298F41 /* ListEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEditView.swift; sourceTree = "<group>"; };
+		0303DF0328D10CC500298F41 /* StyleListEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleListEditView.swift; sourceTree = "<group>"; };
 		0303DF0528D10EC600298F41 /* StyleSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleSearchView.swift; sourceTree = "<group>"; };
 		0303DF0728D39B8300298F41 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		0303DF0928D5FBC800298F41 /* ViewControllModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllModel.swift; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 				0303DF1428E7ED0700298F41 /* CustomImage.swift */,
 				0303DF0128D10C4D00298F41 /* StatusEditView.swift */,
 				0303DF0B28D79DF100298F41 /* StatusStepperView.swift */,
-				0303DF0328D10CC500298F41 /* ListEditView.swift */,
+				0303DF0328D10CC500298F41 /* StyleListEditView.swift */,
 				0303DF0528D10EC600298F41 /* StyleSearchView.swift */,
 				0303DED428D0BD5B00298F41 /* Assets.xcassets */,
 				0303DED928D0BD5B00298F41 /* sagaRecordForMac.entitlements */,
@@ -415,7 +415,7 @@
 			files = (
 				0303DF1528E7ED0700298F41 /* CustomImage.swift in Sources */,
 				0303DF0C28D79DF100298F41 /* StatusStepperView.swift in Sources */,
-				0303DF0428D10CC500298F41 /* ListEditView.swift in Sources */,
+				0303DF0428D10CC500298F41 /* StyleListEditView.swift in Sources */,
 				0303DED328D0BD5900298F41 /* TopView.swift in Sources */,
 				0303DED128D0BD5900298F41 /* sagaRecordForMacApp.swift in Sources */,
 				0303DEFE28D0C9BB00298F41 /* SigninView.swift in Sources */,

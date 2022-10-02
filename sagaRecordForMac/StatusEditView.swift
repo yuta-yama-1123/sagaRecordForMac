@@ -5,11 +5,15 @@ struct StatusEditView: View {
   
   @State var status1: String = ""
   @State var status2: Int = 0
+  
+  // キャラクター（編集対象）
   struct Character {
     var id: String
     var name: String
     var status1: Int
   }
+  
+  // 動作確認用
   let characters: [Character] = [
     Character(
       id: "1",
@@ -59,13 +63,21 @@ struct StatusEditView: View {
         Text("ステータス更新")
         Group {
           StatusStepperView(title: "腕力", param: status2)
+            .padding()
           StatusStepperView(title: "体力", param: status2)
+            .padding()
           StatusStepperView(title: "器用さ", param: status2)
+            .padding()
           StatusStepperView(title: "素早さ", param: status2)
+            .padding()
           StatusStepperView(title: "知力", param: status2)
+            .padding()
           StatusStepperView(title: "精神", param: status2)
+            .padding()
           StatusStepperView(title: "愛", param: status2)
+            .padding()
           StatusStepperView(title: "魅力", param: status2)
+            .padding()
         }
       }
       .frame(width: 750, height: 600)
@@ -73,18 +85,18 @@ struct StatusEditView: View {
   }
   
   func getNewTweetUrlWithTag() -> URL {
-      //シェアするテキストを作成
-      let text = "AppからTwitterでシェアする"
-      let hashTag = "#ハッシュタグ"
-      let completedText = text + "\n" + hashTag
+    //シェアするテキストを作成
+    let text = "AppからTwitterでシェアする"
+    let hashTag = "#ハッシュタグ"
+    let completedText = text + "\n" + hashTag
 
-      //作成したテキストをエンコード
-      let encodedText = completedText.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
-    
-      //エンコードしたテキストをURLに繋げ、URLを開いてツイート画面を表示させる
-      if let encodedText = encodedText {
-        return URL(string: "https://twitter.com/intent/tweet?text=\(encodedText)")!
-      }
+    //作成したテキストをエンコード
+    let encodedText = completedText.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+  
+    //エンコードしたテキストをURLに繋げ、URLを開いてツイート画面を表示させる
+    if let encodedText = encodedText {
+      return URL(string: "https://twitter.com/intent/tweet?text=\(encodedText)")!
+    }
     
     return URL(string: "https://twitter.com/")!
   }
@@ -96,7 +108,7 @@ struct StatusEditView: View {
 }
 
 struct StatusEditView_Previews: PreviewProvider {
-    static var previews: some View {
-        StatusEditView()
-    }
+  static var previews: some View {
+    StatusEditView()
+  }
 }

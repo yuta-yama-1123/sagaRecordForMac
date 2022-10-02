@@ -8,6 +8,7 @@ class ViewControllModel {
     case topMenu = "0"
     case editStatus = "1"
     case searchStyles = "2"
+    case editStyleList = "3"
   }
   // ここに定義したメソッドを呼び出すことで各画面の表示/非表示をコントロールできるようにしたい
   func topMenu() {
@@ -22,8 +23,8 @@ class ViewControllModel {
     self.selectedView = distination.searchStyles.rawValue
   }
   
-  func listStyles() {
-    self.selectedView = "3"
+  func editStyleList() {
+    self.selectedView = distination.editStyleList.rawValue
   }
   
   func selectView4() {

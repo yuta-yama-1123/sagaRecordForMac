@@ -27,31 +27,30 @@ struct IndexView: View {
               .accessibility(identifier: "EditStatus")
               .buttonStyle(PlainButtonStyle())
               .frame(width: 505, height: 305)
-              .padding(
-                EdgeInsets(
-                  top: 0, leading: 0, bottom: 0, trailing: 0
-                )
-              )
+              .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
               .offset(x: 0, y: 0)
               .onHover { hovering in
                 hover = hovering
               }
             
             Button(action: {
-              statusEdit = true
+              viewControllModel.editStyleList()
+              viewStatus = viewControllModel.getSelectedView()
             }) {
-              Text("所持スタイル登録")
-                .font(
-                  .system(size: 50, weight: .heavy, design: .rounded)
-                )
-                .frame(width: 505, height: 305)
-                .foregroundColor(Color.white)
-                .background(.blue)
+              if (hover) {
+                CustomImage(fileName: "505x305_2", overlayText: "所持スタイル登録")
+              } else {
+                CustomImage(fileName: "505x305_1", overlayText: "所持スタイル登録")
               }
-                .buttonStyle(PlainButtonStyle())
-                .padding(
-                  EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
-                .offset(x: -5, y: 0)
+            }
+              .accessibility(identifier: "EditStyleList")
+              .buttonStyle(PlainButtonStyle())
+              .frame(width: 505, height: 305)
+              .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+              .offset(x: -5, y: 0)
+              .onHover { hovering in
+                hover = hovering
+              }
           }
           HStack {
             Button(action: {

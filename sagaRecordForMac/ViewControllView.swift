@@ -16,6 +16,10 @@ struct ViewControllView: View {
     switch viewStatus {
       case ViewControllModel.distination.editStatus.rawValue:
         StatusEditView()
+      case ViewControllModel.distination.searchStyles.rawValue:
+        StyleSearchView()
+      case ViewControllModel.distination.editStyleList.rawValue:
+        StyleListEditView()
     default:
       IndexView()
     }
