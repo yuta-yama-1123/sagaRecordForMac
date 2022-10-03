@@ -31,6 +31,7 @@ class sagaRecordForMacUITests: XCTestCase {
     // サインイン
     try testSignin()
     // 画面遷移
+    sleep(3)
     let app = XCUIApplication()
     let btn_edit_status = app.buttons["EditStatus"]
     let txt_style_name = app.staticTexts["TargetStyleName"]

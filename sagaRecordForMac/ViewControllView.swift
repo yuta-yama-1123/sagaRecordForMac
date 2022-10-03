@@ -14,11 +14,11 @@ struct ViewControllView: View {
   
   var body: some View {
     switch viewStatus {
-      case ViewControllModel.distination.editStatus.rawValue:
+      case ViewControllModel.distination.editStatus.rawValue: // ステータス更新
         StatusEditView()
-      case ViewControllModel.distination.searchStyles.rawValue:
+      case ViewControllModel.distination.searchStyles.rawValue: // スタイル一覧/検索
         StyleSearchView()
-      case ViewControllModel.distination.editStyleList.rawValue:
+      case ViewControllModel.distination.editStyleList.rawValue: // スタイル登録
         StyleListEditView()
     default:
       IndexView()

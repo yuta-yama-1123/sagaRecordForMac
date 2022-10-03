@@ -16,15 +16,15 @@ class ViewControllModel {
   }
   
   func editStatus() {
-    self.selectedView = distination.editStatus.rawValue
+    self.selectedView = distination.editStatus.rawValue // ステータス更新
   }
   
   func searchStyles() {
-    self.selectedView = distination.searchStyles.rawValue
+    self.selectedView = distination.searchStyles.rawValue // スタイル一覧/検索
   }
   
   func editStyleList() {
-    self.selectedView = distination.editStyleList.rawValue
+    self.selectedView = distination.editStyleList.rawValue // スタイル登録
   }
   
   func selectView4() {
