@@ -48,11 +48,50 @@ class CallAPIModel {
   
   // サインアップ
   func callSignupPost(
+    name: String,
+    mailAddress: String,
+    password: String)  -> Promise<Bool> {
+    return Promise { resolver in
+      let requestUrl = constantValueModel.apiDomain + "/signup"
+      let param: Parameters = [
+        "name": name,
+        "mailAddress": mailAddress,
+        "password": password
+      ]
+      let headers: HTTPHeaders = [
+        "Content-Type":"application/x-www-form-urlencoded; charset=UTF-8"
+      ]
+      AF // Alamofire
+        .request(
+          requestUrl,
+          method: .post,
+          parameters: param,
+          encoding: URLEncoding.httpBody,
+          headers: headers
+        )
+        .validate(statusCode: 200..<300)
+        .validate(contentType: ["application/json"])
+        .responseData { response in
+          switch response.result {
+            case .success(let data):
+              // レスポンス内容をログ出力
+              print(String(data: data, encoding: .utf8)!)
+              resolver.fulfill(true)
+            case .failure(let error):
+              print("error:\(error)")
+              resolver.reject(error)
+          }
+        }
+    }
+  }
+  
+  // サインイン
+  func callSigninPost(
     mailAddress: String,
     password: String,
     keepLogin: Bool)  -> Promise<Bool> {
     return Promise { resolver in
-      let requestUrl = constantValueModel.apiDomain + "/signup"
+      let requestUrl = constantValueModel.apiDomain + "/signin"
       let param: Parameters = [
         "mailAddress": mailAddress,
         "password": password,
