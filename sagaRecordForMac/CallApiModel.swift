@@ -14,11 +14,49 @@ class CallAPIModel {
   
   // とりあえずテスト用
   func callTouchPost()  -> Promise<Bool> {
-    print()
     return Promise { resolver in
       let requestUrl = constantValueModel.apiDomain + "/touch"
       let param: Parameters = [
         "hoge": "fuga",
+      ]
+      let headers: HTTPHeaders = [
+        "Content-Type":"application/x-www-form-urlencoded; charset=UTF-8"
+      ]
+      AF // Alamofire
+        .request(
+          requestUrl,
+          method: .post,
+          parameters: param,
+          encoding: URLEncoding.httpBody,
+          headers: headers
+        )
+        .validate(statusCode: 200..<300)
+        .validate(contentType: ["application/json"])
+        .responseData { response in
+          switch response.result {
+            case .success(let data):
+              // レスポンス内容をログ出力
+              print(String(data: data, encoding: .utf8)!)
+              resolver.fulfill(true)
+            case .failure(let error):
+              print("error:\(error)")
+              resolver.reject(error)
+          }
+        }
+    }
+  }
+  
+  // サインアップ
+  func callSignupPost(
+    mailAddress: String,
+    password: String,
+    keepLogin: Bool)  -> Promise<Bool> {
+    return Promise { resolver in
+      let requestUrl = constantValueModel.apiDomain + "/signup"
+      let param: Parameters = [
+        "mailAddress": mailAddress,
+        "password": password,
+        "keepLogin": keepLogin
       ]
       let headers: HTTPHeaders = [
         "Content-Type":"application/x-www-form-urlencoded; charset=UTF-8"
@@ -94,6 +132,16 @@ class CallAPIModel {
               resolver.reject(error)
           }
         }
+    }
+  }
+  
+  // HTTPCookieStorageの内容を確認
+  func printCookies() {
+    // Cookieの取得方法
+    if let cookies = HTTPCookieStorage.shared.cookies(for: URL(string: constantValueModel.apiDomain)!) {
+      for cookie in cookies {
+        print(cookie)
+      }
     }
   }
 }
