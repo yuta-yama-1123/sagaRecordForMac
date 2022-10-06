@@ -33,7 +33,7 @@ struct SignupView: View {
       Button(action: {
         signup()
       }) {
-        Text("ログイン")
+        Text("サインアップ")
           .font(
             .system(size: 16, weight: .heavy, design: .rounded)
           )
@@ -59,6 +59,10 @@ struct SignupView: View {
       print(error)
       //result = "ログインに失敗しました"
     }
+  }
+  
+  func validation() {
+    print("validation")
   }
 }
 
