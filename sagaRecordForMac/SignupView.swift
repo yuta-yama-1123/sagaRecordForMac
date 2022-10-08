@@ -38,6 +38,8 @@ struct SignupView: View {
             .system(size: 16, weight: .heavy, design: .rounded)
           )
       }
+      .buttonStyle(BlueButton())
+      .accessibility(identifier: "Signin")
     }
     .frame(width: 450, height: 400)
   }

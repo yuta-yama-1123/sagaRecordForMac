@@ -61,24 +61,31 @@ struct StatusEditView: View {
         Link("Twitter本文埋め込み", destination: getNewTweetUrlWithTag())
           .padding()
         Text("ステータス更新")
-        Group {
+        HStack {
           StatusStepperView(title: "腕力", param: status2)
             .padding()
           StatusStepperView(title: "体力", param: status2)
             .padding()
+        }
+        HStack {
           StatusStepperView(title: "器用さ", param: status2)
             .padding()
           StatusStepperView(title: "素早さ", param: status2)
             .padding()
+        }
+        HStack {
           StatusStepperView(title: "知力", param: status2)
             .padding()
           StatusStepperView(title: "精神", param: status2)
             .padding()
+        }
+        HStack {
           StatusStepperView(title: "愛", param: status2)
             .padding()
           StatusStepperView(title: "魅力", param: status2)
             .padding()
         }
+        Spacer()
       }
       .frame(width: 750, height: 600)
     }

@@ -44,12 +44,8 @@ struct SigninView: View {
             .system(size: 16, weight: .heavy, design: .rounded)
           )
       }
+      .buttonStyle(BlueButton())
       .accessibility(identifier: "Signin")
-      .buttonStyle(.borderless)
-      .frame(width: 130, height: 45)
-      .foregroundColor(Color.white)
-      .background(Color.blue)
-      .cornerRadius(10, antialiased: true)
       .padding(EdgeInsets(top: 10, leading: 10, bottom: 20, trailing: 10))
       
       Button(action: {
