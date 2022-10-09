@@ -38,6 +38,7 @@ struct SigninView: View {
       
       Button(action: {
         signin()
+        setConfigInfo()
       }) {
         Text("サインイン")
           .font(
@@ -66,13 +67,28 @@ struct SigninView: View {
     firstly {
       // 認証API呼び出し
       callApiModel.callTouchPost()
-    }.done { loggedIn in
+    }.done{ loggedIn in
       if (loggedIn) {
         isAuthenticated = false
       }
     }.catch { error in
       print(error)
       //result = "ログインに失敗しました"
+      return
+    }
+  }
+  
+  func setConfigInfo() {
+    firstly {
+      callApiModel.callConfigInfoGet()
+    }.done{ isSucceeded in
+      if (isSucceeded) {
+        //
+      }
+    }.catch { error in
+      print(error)
+      //result = "ログインに失敗しました"
+      return
     }
   }
   

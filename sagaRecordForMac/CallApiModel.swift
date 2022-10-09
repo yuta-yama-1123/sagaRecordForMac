@@ -11,6 +11,11 @@ import PromiseKit
 
 class CallAPIModel {
   var constantValueModel = ConstantValuesModel()
+  var userDefaultsModel = UserDefaultsModel()
+  
+  let headers: HTTPHeaders = [
+    "Content-Type":"application/x-www-form-urlencoded; charset=UTF-8"
+  ]
   
   // とりあえずテスト用
   func callTouchPost()  -> Promise<Bool> {
@@ -18,9 +23,6 @@ class CallAPIModel {
       let requestUrl = constantValueModel.apiDomain + "/touch"
       let param: Parameters = [
         "hoge": "fuga",
-      ]
-      let headers: HTTPHeaders = [
-        "Content-Type":"application/x-www-form-urlencoded; charset=UTF-8"
       ]
       AF // Alamofire
         .request(
@@ -58,9 +60,6 @@ class CallAPIModel {
         "mailAddress": mailAddress,
         "password": password
       ]
-      let headers: HTTPHeaders = [
-        "Content-Type":"application/x-www-form-urlencoded; charset=UTF-8"
-      ]
       AF // Alamofire
         .request(
           requestUrl,
@@ -97,9 +96,6 @@ class CallAPIModel {
         "password": password,
         "keepLogin": keepLogin
       ]
-      let headers: HTTPHeaders = [
-        "Content-Type":"application/x-www-form-urlencoded; charset=UTF-8"
-      ]
       AF // Alamofire
         .request(
           requestUrl,
@@ -135,9 +131,6 @@ class CallAPIModel {
         "name": name,
         "mailAddress": mailAddress,
         "password": password
-      ]
-      let headers: HTTPHeaders = [
-        "Content-Type":"application/x-www-form-urlencoded; charset=UTF-8"
       ]
       AF // Alamofire
         .request(
@@ -182,6 +175,38 @@ class CallAPIModel {
           case .success(_):
             resolver.fulfill(true)
           case .failure(let error):
+            resolver.reject(error)
+          }
+        }
+    }
+  }
+  
+  // GETお試し用
+  func callConfigInfoGet() -> Promise<Bool> {
+    return Promise { resolver in
+      let requestUrl = constantValueModel.apiDomain + "/configInfo"
+      AF // Alamofire
+        .request(
+          requestUrl,
+          method: .get,
+          headers: headers
+        )
+        .validate(statusCode: 200..<300)
+        .responseData { response in
+          switch response.result {
+            case .success(let data):
+              let decoder = JSONDecoder()
+              guard let decodedResponse = try? decoder.decode(ConstantValuesModel.Result.self, from: data) else {
+                print("Json decode エラー")
+                return
+              }
+              self.userDefaultsModel.registerUserDefaults(
+                key: UserDefaultsModel.defaultsKey.base.rawValue,
+                value: String(decodedResponse.base.value))
+              // UserDefaultsへの登録確認
+              // print(self.userDefaultsModel.retrieveUserDefaults(key: UserDefaultsModel.defaultsKey.base.rawValue))
+              resolver.fulfill(true)
+            case .failure(let error):
             resolver.reject(error)
           }
         }

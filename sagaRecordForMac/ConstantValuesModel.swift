@@ -8,6 +8,17 @@
 import Foundation
 
 class ConstantValuesModel {
-    // もろもろ稼働確認用のAPIサーバドメイン
-    let apiDomain: String = "https://nodejs-api-dev1123.herokuapp.com"
+  // もろもろ稼働確認用のAPIサーバドメイン
+  let apiDomain: String = "https://nodejs-api-dev1123.herokuapp.com"
+  
+  /// 個々の書籍情報の型
+  struct Result: Codable {
+      var base: Base              // 書籍データのID
+  }
+  
+  /// 個々の書籍情報の型
+  struct Base: Codable {
+      var value: Int              // 書籍データのID
+      var update: String          // 書籍タイトル
+  }
 }
