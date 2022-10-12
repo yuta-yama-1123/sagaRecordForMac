@@ -184,7 +184,7 @@ class CallAPIModel {
   // GETお試し用
   func callConfigInfoGet() -> Promise<Bool> {
     return Promise { resolver in
-      let requestUrl = constantValueModel.apiDomain + "/configInfo"
+      let requestUrl = constantValueModel.apiDomain + "/config/basefromdb"
       AF // Alamofire
         .request(
           requestUrl,
@@ -202,7 +202,7 @@ class CallAPIModel {
               }
               self.userDefaultsModel.registerUserDefaults(
                 key: UserDefaultsModel.defaultsKey.base.rawValue,
-                value: String(decodedResponse.base.value))
+                value: String(decodedResponse.detail[0].value))
               // UserDefaultsへの登録確認
               print(self.userDefaultsModel.retrieveUserDefaults(key: UserDefaultsModel.defaultsKey.base.rawValue))
               resolver.fulfill(true)
