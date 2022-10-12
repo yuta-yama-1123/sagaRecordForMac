@@ -204,10 +204,10 @@ class CallAPIModel {
                 key: UserDefaultsModel.defaultsKey.base.rawValue,
                 value: String(decodedResponse.base.value))
               // UserDefaultsへの登録確認
-              // print(self.userDefaultsModel.retrieveUserDefaults(key: UserDefaultsModel.defaultsKey.base.rawValue))
+              print(self.userDefaultsModel.retrieveUserDefaults(key: UserDefaultsModel.defaultsKey.base.rawValue))
               resolver.fulfill(true)
             case .failure(let error):
-            resolver.reject(error)
+              resolver.reject(error)
           }
         }
     }

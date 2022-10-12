@@ -18,7 +18,7 @@ class ConstantValuesModel {
   
   /// 個々の書籍情報の型
   struct Base: Codable {
-      var value: Int              // 書籍データのID
-      var update: String          // 書籍タイトル
+      var value: Int              // BASE値
+      var update_at: String       // 最終更新日
   }
 }

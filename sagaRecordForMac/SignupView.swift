@@ -8,15 +8,27 @@ struct SignupView: View {
   @Binding var isAuthenticated: Bool
   @Binding var isGoingToSignup: Bool
   
+  @State var loginId: String = ""
   @State var mailAddress: String = ""
   @State var password: String = ""
+  @State var passwordConfirm: String = ""
   
   var body: some View {
     VStack {
       Text("you are going to sign up")
+        .padding()
+        .font(
+          .system(size: 22, weight: .heavy, design: .rounded)
+        )
       
       VStack {
-        TextField("ログインID", text: $mailAddress)
+        TextField("ログインID", text: $loginId)
+          .frame(width: 300)
+          .padding()
+          .font(
+            .system(size: 18, weight: .heavy, design: .rounded)
+          )
+        TextField("メールアドレス", text: $mailAddress)
           .frame(width: 300)
           .padding()
           .font(
@@ -24,6 +36,13 @@ struct SignupView: View {
           )
         TextField("パスワード", text: $password)
           .frame(width: 300)
+          .padding()
+          .font(
+            .system(size: 16, weight: .heavy, design: .rounded)
+          )
+        TextField("パスワード（再入力）", text: $passwordConfirm)
+          .frame(width: 300)
+          .padding()
           .font(
             .system(size: 16, weight: .heavy, design: .rounded)
           )
@@ -41,7 +60,7 @@ struct SignupView: View {
       .buttonStyle(BlueButton())
       .accessibility(identifier: "Signin")
     }
-    .frame(width: 450, height: 400)
+    .frame(width: 450, height: 500)
   }
   
   func signup() {

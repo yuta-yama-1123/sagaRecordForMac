@@ -67,8 +67,8 @@ struct SigninView: View {
     firstly {
       // 認証API呼び出し
       callApiModel.callTouchPost()
-    }.done{ loggedIn in
-      if (loggedIn) {
+    }.done{ isSucceeded in
+      if (isSucceeded) {
         isAuthenticated = false
       }
     }.catch { error in
