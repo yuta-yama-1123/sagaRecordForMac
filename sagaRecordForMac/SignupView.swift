@@ -75,6 +75,7 @@ struct SignupView: View {
     }.done { loggedIn in
       if (loggedIn) {
         isGoingToSignup = false
+        isAuthenticated = true
       }
     }.catch { error in
       print(error)
