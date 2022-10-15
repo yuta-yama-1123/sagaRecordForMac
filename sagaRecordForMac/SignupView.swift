@@ -67,11 +67,12 @@ struct SignupView: View {
     print("signup!!")
     firstly {
       // サインアップAPI呼び出し
-      callApiModel.callSignupPost(
-        name: "name",
-        mailAddress: "test",
-        password: "test"
-      )
+      callApiModel.callTouchGet()
+      //callApiModel.callSignupPost(
+//        name: "name",
+//        mailAddress: "test",
+//        password: "test"
+//      )
     }.done { loggedIn in
       if (loggedIn) {
         isGoingToSignup = false
