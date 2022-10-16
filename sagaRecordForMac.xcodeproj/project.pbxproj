@@ -29,6 +29,7 @@
 		0303DF1528E7ED0700298F41 /* CustomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DF1428E7ED0700298F41 /* CustomImage.swift */; };
 		0303DF1728F1454A00298F41 /* CustomSubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DF1628F1454A00298F41 /* CustomSubmitButton.swift */; };
 		0303DF1928F2A99700298F41 /* UserDefaultsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DF1828F2A99700298F41 /* UserDefaultsModel.swift */; };
+		0303DF1B28FC0D3A00298F41 /* CharacterSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303DF1A28FC0D3A00298F41 /* CharacterSearchView.swift */; };
 		154330CA85C0CD71BC48F6CB /* libPods-sagaRecordForMacTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C68700A3917DF7FC8370640E /* libPods-sagaRecordForMacTests.a */; };
 		96FAF35E563AA3138446AE4B /* libPods-sagaRecordForMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F6909D24517C63DDE533FB /* libPods-sagaRecordForMac.a */; };
 		9F0128DDA11F85F8023715C4 /* libPods-sagaRecordForMac-sagaRecordForMacUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADB5204648CA7F2D407FA82 /* libPods-sagaRecordForMac-sagaRecordForMacUITests.a */; };
@@ -79,6 +80,7 @@
 		0303DF1428E7ED0700298F41 /* CustomImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImage.swift; sourceTree = "<group>"; };
 		0303DF1628F1454A00298F41 /* CustomSubmitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSubmitButton.swift; sourceTree = "<group>"; };
 		0303DF1828F2A99700298F41 /* UserDefaultsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsModel.swift; sourceTree = "<group>"; };
+		0303DF1A28FC0D3A00298F41 /* CharacterSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchView.swift; sourceTree = "<group>"; };
 		0ADB5204648CA7F2D407FA82 /* libPods-sagaRecordForMac-sagaRecordForMacUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sagaRecordForMac-sagaRecordForMacUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25F6909D24517C63DDE533FB /* libPods-sagaRecordForMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sagaRecordForMac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E419EA266CDF2BFDDE0B5E1 /* Pods-sagaRecordForMacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sagaRecordForMacTests.release.xcconfig"; path = "Target Support Files/Pods-sagaRecordForMacTests/Pods-sagaRecordForMacTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				0303DF0B28D79DF100298F41 /* StatusStepperView.swift */,
 				0303DF0328D10CC500298F41 /* StyleListEditView.swift */,
 				0303DF0528D10EC600298F41 /* StyleSearchView.swift */,
+				0303DF1A28FC0D3A00298F41 /* CharacterSearchView.swift */,
 				0303DED428D0BD5B00298F41 /* Assets.xcassets */,
 				0303DED928D0BD5B00298F41 /* sagaRecordForMac.entitlements */,
 				0303DED628D0BD5B00298F41 /* Preview Content */,
@@ -427,6 +430,7 @@
 				0303DED128D0BD5900298F41 /* sagaRecordForMacApp.swift in Sources */,
 				0303DEFE28D0C9BB00298F41 /* SigninView.swift in Sources */,
 				0303DF0E28DE0C2200298F41 /* ViewControllView.swift in Sources */,
+				0303DF1B28FC0D3A00298F41 /* CharacterSearchView.swift in Sources */,
 				0303DF0828D39B8300298F41 /* SignupView.swift in Sources */,
 				0303DF0A28D5FBC800298F41 /* ViewControllModel.swift in Sources */,
 				0303DF1928F2A99700298F41 /* UserDefaultsModel.swift in Sources */,

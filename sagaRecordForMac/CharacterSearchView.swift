@@ -1,7 +1,7 @@
 import SwiftUI
 import PromiseKit
 
-struct StyleSearchView: View {
+struct CharacterSearchView: View {
   var constantValueModel = ConstantValuesModel()
   var callApiModel = CallAPIModel()
   
@@ -9,7 +9,7 @@ struct StyleSearchView: View {
   @State var checked2: [String] = []
   var body: some View {
     VStack {
-      Text("StyleSearchView")
+      Text("CharacterSearchView")
       
       Text("シリーズ")
       ScrollView(.horizontal, showsIndicators: false) {
@@ -101,8 +101,8 @@ struct StyleSearchView: View {
   }
 }
 
-struct StyleSearchView_Previews: PreviewProvider {
+struct CharacterSearchView_Previews: PreviewProvider {
     static var previews: some View {
-        StyleSearchView()
+        CharacterSearchView()
     }
 }
