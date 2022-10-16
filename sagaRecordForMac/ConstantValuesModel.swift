@@ -26,16 +26,16 @@ class ConstantValuesModel {
   ]
   
   var weapon: [Weapon] = [
-      Weapon("Sword"),
-      Weapon("GreatSword"),
-      Weapon("Axe"),
-      Weapon("Hummer"),
-      Weapon("Gun"),
-      Weapon("MartialArts"),
-      Weapon("Rapier"),
-      Weapon("Spear"),
-      Weapon("Arrow"),
-      Weapon("Wand")
+      Weapon("Sword", "剣"),
+      Weapon("GreatSword", "大剣"),
+      Weapon("Axe", "斧"),
+      Weapon("Club", "棍棒"),
+      Weapon("Gun", "銃"),
+      Weapon("MartialArts", "体術"),
+      Weapon("Rapier", "小剣"),
+      Weapon("Spear", "槍"),
+      Weapon("Arrow", "弓"),
+      Weapon("Wand", "杖")
   ]
   
   struct Result: Codable {
@@ -65,10 +65,12 @@ class ConstantValuesModel {
     var id = UUID()
     var isChecked: Bool
     var name: String
+    var displayName: String
       
-    init(_ name: String) {
+    init(_ name: String, _ displayName: String) {
       self.isChecked = false
       self.name = name
+      self.displayName = displayName
     }
   }
 }

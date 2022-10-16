@@ -120,6 +120,67 @@ class CallAPIModel {
     }
   }
   
+  // スタイルデータ検索用
+  func callSelectStylesPost(
+    series: [String],
+    weapon: [String])  -> Promise<Bool> {
+    return Promise { resolver in
+      let requestUrl = constantValueModel.apiDomain + "/character/select"
+      let param: Parameters = [
+        "series": series,
+        "weapon": weapon
+      ]
+      AF // Alamofire
+        .request(
+          requestUrl,
+          method: .post,
+          parameters: param,
+          encoding: URLEncoding.httpBody,
+          headers: headers
+        )
+        .validate(statusCode: 200..<300)
+        .validate(contentType: ["application/json"])
+        .responseData { response in
+          switch response.result {
+            case .success(let data):
+              // レスポンス内容をログ出力
+              print(String(data: data, encoding: .utf8)!)
+              resolver.fulfill(true)
+            case .failure(let error):
+              print("error:\(error)")
+              resolver.reject(error)
+          }
+        }
+    }
+  }
+  
+  // スタイルデータ検索用
+  func callSelectAllStylesPost()  -> Promise<Bool> {
+    return Promise { resolver in
+      let requestUrl = constantValueModel.apiDomain + "/character/selectAll"
+      AF // Alamofire
+        .request(
+          requestUrl,
+          method: .post,
+          encoding: URLEncoding.httpBody,
+          headers: headers
+        )
+        .validate(statusCode: 200..<300)
+        .validate(contentType: ["application/json"])
+        .responseData { response in
+          switch response.result {
+            case .success(let data):
+              // レスポンス内容をログ出力
+              print(String(data: data, encoding: .utf8)!)
+              resolver.fulfill(true)
+            case .failure(let error):
+              print("error:\(error)")
+              resolver.reject(error)
+          }
+        }
+    }
+  }
+  
   // スタイルデータ更新用
   func callEditStylePost(
     name: String,
