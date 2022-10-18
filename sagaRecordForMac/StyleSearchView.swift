@@ -18,7 +18,7 @@ struct StyleSearchView: View {
             HStack {
               Image(systemName: checked.contains(where: { $0 == index.name }) ? "checkmark.square" : "square")
                 .onTapGesture {
-                  check(name: index.name)
+                  seriesCheckToggle(name: index.name)
                 }
               Text(index.name)
             }
@@ -36,7 +36,7 @@ struct StyleSearchView: View {
             HStack {
               Image(systemName: checked2.contains(where: { $0 == index.name }) ? "checkmark.square" : "square")
                 .onTapGesture {
-                  check2(name: index.name)
+                  weaponCheckToggle(name: index.name)
                 }
               Text(index.displayName)
             }
@@ -65,7 +65,7 @@ struct StyleSearchView: View {
     }
   }
   
-  func check(name: String) {
+  func seriesCheckToggle(name: String) {
     if (checked.contains(where: { $0 == name })) {
       print("remove")
       checked.removeAll(where: { $0 == name })
@@ -75,7 +75,7 @@ struct StyleSearchView: View {
     }
   }
   
-  func check2(name: String) {
+  func weaponCheckToggle(name: String) {
     if (checked2.contains(where: { $0 == name })) {
       print("remove")
       checked2.removeAll(where: { $0 == name })
