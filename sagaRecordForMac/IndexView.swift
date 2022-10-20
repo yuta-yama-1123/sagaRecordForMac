@@ -75,7 +75,8 @@ struct IndexView: View {
               }
             
             Button(action: {
-              viewControllModel.selectView4()
+              viewControllModel.editCharacterList()
+              viewStatus = viewControllModel.getSelectedView()
             }) {
               Text("その他の何か")
                 .font(
@@ -98,7 +99,7 @@ struct IndexView: View {
   }
 }
 
-struct SwiftUIView_Previews: PreviewProvider {
+struct IndexView_Previews: PreviewProvider {
   static var previews: some View {
     IndexView()
   }

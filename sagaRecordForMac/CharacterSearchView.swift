@@ -7,9 +7,23 @@ struct CharacterSearchView: View {
   
   @State var checked: [String] = []
   @State var checked2: [String] = []
+  
+  @State var editingCharacter: Bool = false
+  
   var body: some View {
     VStack {
       Text("CharacterSearchView")
+      
+      Button(action: {
+        editCharacter()
+      }) {
+        Text("追加")
+          .font(
+            .system(size: 14, weight: .heavy, design: .rounded)
+          )
+      }
+      .buttonStyle(.borderless)
+      .foregroundColor(Color.blue)
       
       Text("シリーズ")
       ScrollView(.horizontal, showsIndicators: false) {
@@ -63,6 +77,9 @@ struct CharacterSearchView: View {
       .accessibility(identifier: "Signin")
       .padding(EdgeInsets(top: 10, leading: 10, bottom: 20, trailing: 10))
     }
+    .sheet(isPresented: $editingCharacter) {
+      CharacterEditView(editingCharacter: $editingCharacter)
+    }
   }
   
   func check(name: String) {
@@ -98,6 +115,10 @@ struct CharacterSearchView: View {
       //result = "ログインに失敗しました"
       return
     }
+  }
+  
+  func editCharacter() {
+    editingCharacter = true
   }
 }
 

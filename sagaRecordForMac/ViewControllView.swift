@@ -20,6 +20,8 @@ struct ViewControllView: View {
         StyleSearchView()
       case ViewControllModel.distination.editStyleList.rawValue: // スタイル登録
         StyleListEditView()
+      case ViewControllModel.distination.editCharacterList.rawValue: // スタイル登録
+        CharacterSearchView()
     default:
       IndexView()
     }

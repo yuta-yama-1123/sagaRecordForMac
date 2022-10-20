@@ -166,10 +166,10 @@
 				0303DF0328D10CC500298F41 /* StyleListEditView.swift */,
 				0303DF0528D10EC600298F41 /* StyleSearchView.swift */,
 				0303DF1A28FC0D3A00298F41 /* CharacterSearchView.swift */,
+				0303DF1C2901CA5300298F41 /* CharacterEditView.swift */,
 				0303DED428D0BD5B00298F41 /* Assets.xcassets */,
 				0303DED928D0BD5B00298F41 /* sagaRecordForMac.entitlements */,
 				0303DED628D0BD5B00298F41 /* Preview Content */,
-				0303DF1C2901CA5300298F41 /* CharacterEditView.swift */,
 			);
 			path = sagaRecordForMac;
 			sourceTree = "<group>";
